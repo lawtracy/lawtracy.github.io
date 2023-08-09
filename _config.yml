@@ -1,5 +1,5 @@
 # Site settings
-title: Hux Blog
+title: L T's blog
 SEOTitle: 黑白探长的Blog | Law Tracy's Blog
 header-img: img/zhuyeshangfang.png
 email: lawtracylaw@gmail.com
@@ -10,15 +10,6 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
-
-# SNS settings
-RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -73,12 +64,12 @@ ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 
 # Sidebar settings
-sidebar: true # whether or not using Sidebar.
+sidebar: ture # whether or not using Sidebar.
 sidebar-about-description: "无法用语言描述的我 <br> ————折腾无止境"
 sidebar-avatar: img/guanyuwo.jpeg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
-featured-tags: true # whether or not using Feature-Tags
+featured-tags: false # whether or not using Feature-Tags
 featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 
 # Progressive Web Apps
@@ -91,12 +82,12 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
+    { title: "极速云", href: "https://jscloud.cc/signup.html?version=1.0&pcc=6bf2bc4dac2321a5" },
+   # { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
+   # { title: "Kun Qian", href: "http://kunq.me" },
+   # { title: "Sherry Woo", href: "https://sherrywoo.me/" },
+    #{ title: "SmdCn", href: "http://blog.smdcn.net" },
+   # { title: "JiyinYiyong", href: "http://tiye.me/" },
+    #{ title: "DHong Say", href: "http://dhong.co" },
+   # { title: "尹峰以为", href: "http://ingf.github.io/" },
   ]
