@@ -1,7 +1,7 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
+title: Mianshuo Zhao's Blog
+description: This is a blog which was bulit by Zhao Mianshuo. The Jekyll theme is from Songzi Vong.
+url: https://zhaomianshuo.pages.dev
 avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
+  name: Zhao Mianshuo
   url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  email: zhao-mianshuo@outlook.com
