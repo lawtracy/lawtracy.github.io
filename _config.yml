@@ -1,0 +1,37 @@
+# _config.yml
+# Main configuration file for the Jekyll site
+
+# Site settings
+title: Modern Minimalist Blog               # Site title displayed in the header
+email: your-email@example.com              # Contact email (optional)
+description: >-                            # Site description for meta tags
+  A clean, responsive Jekyll theme with dark mode support
+baseurl: ""                                # Subpath of your site (e.g., /blog)
+url: ""                                    # Base hostname & protocol for your site
+twitter_username: jekyllrb                 # Twitter username (optional)
+github_username:  jekyll                   # GitHub username (optional)
+
+# Build settings
+markdown: kramdown                         # Markdown processor
+theme: null                                # No external theme used
+plugins:
+  - jekyll-feed                            # Plugin for generating RSS feeds
+
+# Theme customization settings
+theme_color: "#3498db"                     # Primary color for links and accents
+font_family: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"  # Font stack
+max_width: "800px"                         # Maximum width for content container
+dark_mode: true                            # Enable/disable dark mode toggle
+code_highlight_theme: "github"             # Syntax highlighting theme (github, dracula, etc.)
+
+# Pagination settings
+paginate: 5                                # Number of posts per page
+paginate_path: "/page:num/"                # Pagination URL pattern
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - demo_index.html
+  - Instruction.html

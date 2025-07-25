@@ -1,0 +1,24 @@
+<!-- _includes/nav.html -->
+<!-- Navigation bar with site links and dark mode toggle -->
+<nav class="site-nav">
+    <div class="nav-container">
+        <!-- Site logo/title -->
+        <a href="{{ '/' | relative_url }}" class="nav-brand">{{ site.title }}</a>
+        
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+        
+        <!-- Dark mode toggle button -->
+        {% if site.dark_mode %}
+            <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        {% endif %}
+    </div>
+</nav>

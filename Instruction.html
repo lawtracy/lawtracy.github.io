@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Minimalist Blog - Instructions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --text-color: #333;
+            --bg-color: #fff;
+            --border-color: #eee;
+            --code-bg: #f8f9fa;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --text-color: #f0f0f0;
+            --bg-color: #1a1a1a;
+            --border-color: #333;
+            --code-bg: #2d2d2d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-color);
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--text-color);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--code-bg);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Modern Minimalist Blog - Instructions</h1>
+            <p>A clean, responsive Jekyll theme with dark mode support</p>
+        </header>
+
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>Welcome to the Modern Minimalist Blog theme! This is a clean, responsive Jekyll theme designed for bloggers who want a minimalist approach with modern aesthetics. The theme features:</p>
+            <ul>
+                <li>Responsive design that works on all devices</li>
+                <li>Dark mode support with automatic OS preference detection</li>
+                <li>Easily customizable colors and typography</li>
+                <li>Clean typography with the Inter font family</li>
+                <li>Fast loading with minimal dependencies</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Folder Structure</h2>
+            <p>The project follows the standard Jekyll directory structure:</p>
+            <pre><code>jekyll-blog-theme/
+├── _config.yml
+├── _layouts/
+│   ├── default.html
+│   ├── post.html
+│   └── page.html
+├── _includes/
+│   ├── header.html
+│   ├── footer.html
+│   ├── nav.html
+│   └── post-card.html
+├── _posts/
+│   └── 2025-07-24-welcome.md
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+├── index.md
+├── demo_index.html
+└── Instruction.html</code></pre>
+            
+            <h3>Key Files Explanation</h3>
+            <ul>
+                <li><code>_config.yml</code>: Main configuration file for site settings</li>
+                <li><code>_layouts/</code>: Template files that define the structure of pages</li>
+                <li><code>_includes/</code>: Reusable components like header, footer, navigation</li>
+                <li><code>_posts/</code>: Blog posts in Markdown format</li>
+                <li><code>assets/</code>: CSS and JavaScript files</li>
+                <li><code>index.md</code>: Homepage content</li>
+                <li><code>demo_index.html</code>: Standalone HTML preview of the homepage</li>
+                <li><code>Instruction.html</code>: This documentation file</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Configuration Parameters</h2>
+            <p>All configuration options are defined in <code>_config.yml</code>:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Description</th>
+                        <th>Default Value</th>
+                        <th>Customizable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>title</code></td>
+                        <td>Site title displayed in the header</td>
+                        <td><code>Modern Minimalist Blog</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>email</code></td>
+                        <td>Contact email (optional)</td>
+                        <td><code>your-email@example.com</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>description</code></td>
+                        <td>Site description for meta tags</td>
+                        <td><code>A clean, responsive Jekyll theme...</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>baseurl</code></td>
+                        <td>Subpath of your site (e.g., /blog)</td>
+                        <td><code>""</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>url</code></td>
+                        <td>Base hostname & protocol for your site</td>
+                        <td><code>""</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>twitter_username</code></td>
+                        <td>Twitter username (optional)</td>
+                        <td><code>jekyllrb</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>github_username</code></td>
+                        <td>GitHub username (optional)</td>
+                        <td><code>jekyll</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>theme_color</code></td>
+                        <td>Primary color for links and accents</td>
+                        <td><code>"#3498db"</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>font_family</code></td>
+                        <td>Font stack for the site</td>
+                        <td><code>'Inter', sans-serif</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>max_width</code></td>
+                        <td>Maximum width for content container</td>
+                        <td><code>"800px"</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>dark_mode</code></td>
+                        <td>Enable/disable dark mode toggle</td>
+                        <td><code>true</code></td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td><code>paginate</code></td>
+                        <td>Number of posts per page</td>
+                        <td><code>5</code></td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Customizing the Theme</h2>
+            
+            <h3>Changing Colors</h3>
+            <p>To change the color scheme, modify these parameters in <code>_config.yml</code>:</p>
+            <pre><code>theme_color: "#3498db"  # Primary accent color</code></pre>
+            
+            <p>For more advanced color customization, edit the CSS variables in <code>assets/css/style.css</code>:</p>
+            <pre><code>:root {
+  --primary-color: #3498db;
+  --text-color: #333;
+  --bg-color: #fff;
+  --border-color: #eee;
+  --link-color: #3498db;
+  --hover-color: #2980b9;
+}</code></pre>
+            
+            <h3>Changing Fonts</h3>
+            <p>Update the <code>font_family</code> parameter in <code>_config.yml</code>:</p>
+            <pre><code>font_family: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"</code></pre>
+            
+            <p>Also update the Google Fonts import in <code>_layouts/default.html</code>:</p>
+            <pre><code><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></code></pre>
+            
+            <h3>Adjusting Layout</h3>
+            <p>Modify the <code>max_width</code> parameter in <code>_config.yml</code> to change the content width:</p>
+            <pre><code>max_width: "800px"</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>Adding Content</h2>
+            
+            <h3>Creating New Posts</h3>
+            <p>To add a new blog post:</p>
+            <ol>
+                <li>Create a new file in the <code>_posts</code> directory</li>
+                <li>Name it using the format: <code>YYYY-MM-DD-title.md</code></li>
+                <li>Add front matter at the top of the file:</li>
+            </ol>
+            <pre><code>---
+layout: post
+title: "Your Post Title"
+date: 2025-07-25 12:00:00 +0000
+categories: jekyll update
+author: Your Name
+---</code></pre>
+            <p>Then write your content in Markdown below the front matter.</p>
+            
+            <h3>Adding Pages</h3>
+            <p>To create a new static page:</p>
+            <ol>
+                <li>Create a new Markdown file in the root directory</li>
+                <li>Add front matter specifying the layout:</li>
+            </ol>
+            <pre><code>---
+layout: page
+title: "About"
+---</code></pre>
+        </div>
+
+        <div class="section">
+            <h2>External Resources</h2>
+            <p>This theme uses the following external resources:</p>
+            
+            <h3>Fonts</h3>
+            <ul>
+                <li><strong>Inter</strong> - A clean, modern typeface from Google Fonts</li>
+                <li>Loaded via: <code><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></code></li>
+            </ul>
+            
+            <h3>Icons</h3>
+            <ul>
+                <li><strong>Emoji Icons</strong> - Used for dark mode toggle (☀️ and 🌙)</li>
+                <li>No external dependencies - native emoji support</li>
+            </ul>
+            
+            <h3>JavaScript Libraries</h3>
+            <ul>
+                <li><strong>Vanilla JavaScript</strong> - No external libraries required</li>
+                <li>Dark mode functionality implemented with localStorage</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Using demo_index.html</h2>
+            <p>The <code>demo_index.html</code> file is a standalone HTML preview of the homepage. It's useful for:</p>
+            <ul>
+                <li>Previewing the design without running Jekyll</li>
+                <li>Sharing a static version of the layout</li>
+                <li>Testing design changes quickly</li>
+            </ul>
+            <p>To use it:</p>
+            <ol>
+                <li>Open <code>demo_index.html</code> directly in a web browser</li>
+                <li>All styles and functionality are contained in the file</li>
+                <li>No Jekyll or server required</li>
+            </ol>
+        </div>
+    </div>
+    
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButton = document.getElementById('dark-mode-toggle');
+            
+            if (toggleButton) {
+                const savedTheme = localStorage.getItem('theme');
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+                
+                const currentTheme = savedTheme || (prefersDarkScheme.matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', currentTheme);
+                updateToggleIcon(currentTheme);
+                
+                toggleButton.addEventListener('click', function() {
+                    const currentTheme = document.documentElement.getAttribute('data-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateToggleIcon(newTheme);
+                });
+            }
+            
+            function updateToggleIcon(theme) {
+                const sunIcon = toggleButton.querySelector('.sun-icon');
+                const moonIcon = toggleButton.querySelector('.moon-icon');
+                
+                if (theme === 'dark') {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'inline';
+                } else {
+                    sunIcon.style.display = 'inline';
+                    moonIcon.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

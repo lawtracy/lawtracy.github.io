@@ -1,0 +1,22 @@
+<!-- _includes/post-card.html -->
+<!-- Reusable component for displaying post summaries -->
+<article class="post-card">
+    <header class="post-card-header">
+        <h2 class="post-card-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <div class="post-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+            </time>
+        </div>
+    </header>
+    
+    <div class="post-card-excerpt">
+        {{ post.excerpt }}
+    </div>
+    
+    <footer class="post-card-footer">
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+    </footer>
+</article>
