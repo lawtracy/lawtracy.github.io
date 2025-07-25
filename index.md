@@ -3,14 +3,23 @@ layout: default
 title: Home
 ---
 
-<!-- Posts list with proper container -->
+<!-- Include site header -->
+{% include header.html %}
+
+<!-- Posts list -->
 <div class="container">
-    {% for post in paginator.posts %}
-        {% include post-card.html %}
-    {% endfor %}
+    <div class="posts-list">
+        {% unless paginator.posts.empty? %}
+            {% for post in paginator.posts %}
+                {% include post-card.html %}
+            {% endfor %}
+        {% else %}
+            <p>No posts yet. Check back soon!</p>
+        {% endunless %}
+    </div>
 </div>
 
-<!-- Pagination with proper container -->
+<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
     <nav class="pagination">
         <div class="container">
